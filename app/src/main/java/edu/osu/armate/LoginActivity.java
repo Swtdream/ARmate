@@ -325,8 +325,8 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             showProgress(false);
 
             if (success) {
-                Intent intent_Camera=new Intent(LoginActivity.this,ImageTargets.class);
-                startActivity(intent_Camera);
+                Intent intent_cloud=new Intent(LoginActivity.this,CloudReco.class);
+                startActivity(intent_cloud);
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));

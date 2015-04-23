@@ -49,6 +49,20 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".CloudReco"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.CLOUD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
 
     </application>
 
